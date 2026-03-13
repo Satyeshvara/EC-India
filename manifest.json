@@ -9,7 +9,7 @@
   "icons": [
     {
       "src": "Assets/Icons/Logo.png",
-      "sizes": "150x150",
+      "sizes": "100x100",
       "type": "image/png"
     }
   ]

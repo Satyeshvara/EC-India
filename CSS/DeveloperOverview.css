@@ -1,0 +1,156 @@
+.DEV {
+    /* Box Model */
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+
+    /* Typography */
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+
+    /* Visual */
+    background: #017FD9;
+    cursor: pointer;
+}
+
+.OVERLAY_CONTAINER {
+    /* Position */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    /* Layout (Flexbox / Grid) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Box Model */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Visual */
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.OVERLAY_CONTAINER.ACTIVE {
+    /* Visual */
+    opacity: 1;
+    visibility: visible;
+}
+
+.OVERLAY_CONTENT {
+    /* Position */
+    position: relative;
+
+    /* Box Model */
+    width: 85%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    /* Typography */
+    text-align: left;
+
+    /* Visual */
+    background: #FFFFFF;
+
+    /* Effects & Animation */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.WINDOW_TITLE_BAR {
+    /* Layout (Flexbox / Grid) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Box Model */
+    height: 50px;
+    padding-left: 15px;
+    border-bottom: 1px solid #D9D9D9;
+
+    /* Visual */
+    background: #F2F2F2;
+}
+
+.WINDOW_TITLE {
+    /* Typography */
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.WINDOW_CLOSE {
+    /* Layout (Flexbox / Grid) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Box Model */
+    width: 50px;
+    height: 100%;
+    border: none;
+
+    /* Typography */
+    color: #808080;
+    font-size: 15px;
+    font-weight: 700;
+
+    /* Visual */
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+}
+
+.WINDOW_CLOSE:hover {
+    /* Visual */
+    background: #F23D3D;
+    color: #FFFFFF;
+}
+
+.DEV_INFO {
+    /* Layout (Flexbox / Grid) */
+    display: flex;
+    flex-direction: column;
+
+    /* Box Model */
+    padding: 15px;
+}
+
+.DEV_DETAIL {
+    /* Box Model */
+    margin-bottom: 5px;
+
+    /* Typography */
+    color: #000000;
+    font-size: 15px;
+}
+
+.LINKS {
+    /* Layout (Flexbox / Grid) */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    /* Box Model */
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.LINKS a {
+    /* Box Model */
+    padding: 10px 10px;
+    border-radius: 5px;
+
+    /* Typography */
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+
+    /* Visual */
+    background: #017FD9;
+}

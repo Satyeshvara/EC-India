@@ -1,0 +1,276 @@
+* {
+    /* Box Model */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Visual */
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    /* Box Model */
+    height: 100%;
+    overflow: hidden;
+
+    /* Typography */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    
+    /* Visual */
+    background-color: #FFFFFF;
+    touch-action: pan-x pan-y;
+}
+
+.APP_LAYOUT {
+    /* Layout (Flexbox / Grid) */
+    display: flex;
+    flex-direction: column;
+
+    /* Box Model */
+    height: 100vh;
+    height: 100dvh;
+}
+
+.APP_HEADER {
+    /* Position */
+    z-index: 100;
+
+    /* Layout (Flexbox / Grid) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Box Model */
+    height: 75px;
+    padding: 0 15px;
+    border-bottom: 1px solid #F2F2F2;
+    flex-shrink: 0;
+
+    /* Visual */
+    background: #FFFFFF;
+}
+
+.APP_HEADER h1 {
+    /* Typography */
+    color: #000000;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.CONTENTS {
+    /* Box Model */
+    padding: 0 15px;
+    overflow-y: auto;
+    flex-grow: 1;
+
+    /* Visual */
+    content-visibility: auto;
+    scrollbar-width: none;
+}
+
+.CONTENTS::-webkit-scrollbar {
+    /* Layout (Flexbox / Grid) */
+    display: none;
+}
+
+.ALPHABET_GROUP {
+    /* Position */
+    position: sticky;
+    top: 0;
+    z-index: 50;
+
+    /* Box Model */
+    padding: 15px 0 15px 0;
+
+    /* Typography */
+    color: #0170BF;
+    font-size: 15px;
+    font-weight: 500;
+
+    /* Visual */
+    background: #FFFFFF;
+}
+
+.SINGLE_CONTACT_CARD {
+    /* Layout (Flexbox / Grid) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Box Model */
+    padding: 5px 0;
+}
+
+.CONTACT_NAME {
+    /* Typography */
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.CONTACT_NUMBER {
+    /* Box Model */
+    margin-top: 2.5px;
+
+    /* Typography */
+    color: #808080;
+    font-size: 14px;
+}
+
+.CALL {
+    /* Layout (Flexbox / Grid) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Box Model */
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+
+    /* Typography */
+    color: #017FD9;
+    text-decoration: none;
+
+    /* Visual */
+    background: #E5F4FF;
+}
+
+.TABS {
+    /* Layout */
+    display: flex;
+    gap: 5px;
+    
+    /* Box Model */
+    padding: 15px 15px 0 15px;
+    
+    /* Visual */
+    background: #FFFFFF;
+    z-index: 100;
+}
+
+.TABS_SWITCH {
+    /* Layout */
+    flex: 1;
+    
+    /* Box Model */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    
+    /* Typography */
+    color: #808080;
+    font-size: 14px;
+    font-weight: 500;
+    
+    /* Visual */
+    background: #F2F2F2;
+    cursor: pointer;
+}
+
+.TABS_SWITCH.ACTIVE {
+    /* Typography */
+    color: #FFFFFF;
+
+    /* Visual */
+    background: #017FD9;
+}
+
+.CALL.WHATSAPP {
+    /* Visual */
+    background: #DAF2E6;
+}
+
+.CALL.WHATSAPP .CALL_ICON {
+    /* Layout (Flexbox / Grid) */
+    display: none; 
+}
+
+.CALL.WHATSAPP .WHATSAPP_ICON {
+    /* Layout (Flexbox / Grid) */
+    display: block; 
+}
+
+.WHATSAPP_ICON {
+    /* Layout (Flexbox / Grid) */
+    display: none;
+
+    /* Box Model */
+    width: 25px;
+    height: 25px;
+    
+    /* Visual */
+    background-color: #1DBF6E; 
+    -webkit-mask-image: url('../Assets/Icons/WhatsApp.svg');
+    mask-image: url('../Assets/Icons/WhatsApp.svg');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+.SEARCH {
+    /* Position */
+    z-index: 100;
+
+    /* Box Model */
+    height: auto;
+    padding: 15px;
+    border-top: 1px solid #F2F2F2;
+    flex-shrink: 0;
+
+    /* Visual */
+    background: #FFFFFF;
+}
+
+.SEARCH_BAR {
+    /* Layout (Flexbox / Grid) */
+    display: flex;
+    align-items: center;
+
+    /* Box Model */
+    padding: 0 15px;
+    border-radius: 50px;
+
+    /* Visual */
+    background: #F2F2F2;
+}
+
+#SEARCH_QUERY {
+    /* Box Model */
+    margin-left: 10px;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    flex: 1;
+
+    /* Typography */
+    color: #404040;
+    font-size: 15px;
+
+    /* Visual */
+    background: transparent;
+}
+
+.SEARCH_ICON,
+.CLOSE_ICON {
+    /* Typography */
+    color: #808080;
+}
+
+.CLOSE_ICON {
+    /* Box Model */
+    padding: 0;
+
+    /* Visual */
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    /* Typography */
+    font-variation-settings: 'FILL' 1, 'wght' 250, 'GRAD' 100, 'opsz' 25;
+}

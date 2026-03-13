@@ -1,0 +1,16 @@
+{
+  "name": "EC-India",
+  "short_name": "EC-India",
+  "start_url": "./EC-India.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#017FD9",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "Assets/Icons/Logo.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    }
+  ]
+}

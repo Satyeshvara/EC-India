@@ -1,0 +1,45 @@
+.SPINNER_WRAPPER {
+    /* Layout (Flexbox / Grid) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Box Model */
+    width: 100%;
+    padding: 50px 0;
+}
+
+.SPINNER {
+    /* Box Model */
+    width: 50px;
+    height: 50px;
+    border: 2.5px solid #E5F4FF;
+    border-top: 2.5px solid #017FD9;
+    border-radius: 50%;
+
+    /* Effects & Animation */
+    will-change: transform;
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.FADE_IN {
+    /* Visual */
+    opacity: 0;
+
+    /* Effects & Animation */
+    transition: opacity 0.25s ease-in-out;
+}
+
+.FADE_IN.VISIBLE {
+    /* Visual */
+    opacity: 1;
+}
